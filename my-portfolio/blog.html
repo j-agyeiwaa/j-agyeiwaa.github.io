@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <section class="blog-page">
+            <div class="blog-header">
+                <h1>My Blog</h1>
+                <p>Thoughts on code, life at KNUST, and building things.</p>
+                <button id="new-post-btn" class="btn btn-primary">+ New Post</button>
+            </div>
+            <div id="post-form" class="post-form hidden">
+                <h2>Write a New Post</h2>
+                <input type="text" id="post-title" placeholder="Post title..." required>
+                <textarea id="post-body" rows="8" placeholder="Write your post here..." required></textarea>
+                <div class="form-actions">
+                    <button id="publish-btn" class="btn btn-primary">Publish Post</button>
+                    <button id="cancel-btn" class="btn btn-outline">Cancel</button>
+                </div>
+            </div>
+            <div id="posts-container" class="posts-container">
+            </div>
+        </section>
+        <script src="js/blog.js"></script>
+    </main>
+</body>
+
+</html>
